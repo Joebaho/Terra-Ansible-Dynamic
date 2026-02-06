@@ -2,3 +2,7 @@
 *.tfstate
 *.tfstate.backup
 ansible/ansible_keypair.pem
+.terraform.lock.hcl
+.DS_Store
+
+.DS_Store
