@@ -9,10 +9,10 @@ Terraform handles the **infrastructure provisioning**, while Ansible automates *
 ## 🚀 Project Overview
 
 ### What this project does:
-- Provisions **1 EC2 instance** (Called the controller).
+- Provision **1 EC2 instance** (Called the controller).
 - Provisions **6 EC2 instances** (2 per environment: `dev`, `stage`, and `prod`).
 - Creates a **keypair** and will keep both public and private keys securely in controller.
-- Use a **controller userdata** that will install ansible on the controller and **node userdata**to controll python3 installation on nodes.
+- Use a **controller userdata** that will install ansible on the controller and **node userdata** to ensure 'python3' installation on nodes.
 - Create **controller security group** and **node security group**with rules for SSH (22) and HTTP (80).
 - Uses **Ansible** to configure web servers on each instance.
 - Deploys environment-specific `index.html` pages:
@@ -73,8 +73,8 @@ terra-ansible-Dynamic/
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/Pravesh-Sudha/terra-projects.git
-cd terra-projects/Terra-Ansible-Dynamic
+git clone https://github.com/Joebaho/Terra-Ansible-Dynamic.git
+cd Terra-Ansible-Dynamic
 ```
 
 ### 2. One-Click Deployment
@@ -140,15 +140,22 @@ This script:
 ## 👨‍💻 Author
 
 **Joseph Mbatchou**
-• DevOps / Cloud / Platform  Engineer   • Content Creator
+
+• DevOps / Cloud / Platform  Engineer   
+• Content Creator / AWS Builder
 
 ## 🔗 Connect With Me
 
 🌐 Website: [https://platform.joebahocloud.com](https://platform.joebahocloud.com)
+
 💼 LinkedIn: [https://www.linkedin.com/in/josephmbatchou/](https://www.linkedin.com/in/josephmbatchou/)
+
 🐦 X/Twitter: [https://www.twitter.com/Joebaho237](https://www.twitter.com/Joebaho237)
+
 ▶️ YouTube: [https://www.youtube.com/@josephmbatchou5596](https://www.youtube.com/@josephmbatchou5596)
+
 🔗 Github: [https://github.com/Joebaho](https://github.com/Joebaho)
+
 📦 Dockerhub: [https://hub.docker.com/u/joebaho2](https://hub.docker.com/u/joebaho2)
 
 ---
