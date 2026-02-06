@@ -1,0 +1,19 @@
+---
+- name: Configure DEV
+  hosts: env_dev
+  become: true
+  roles:
+    -  { role: webserver, env: dev }
+
+- name: Configure STAGE
+  hosts: env_stage
+  become: true
+  roles:
+    -  { role: webserver, env: stage }
+
+- name: Configure PROD
+  hosts: env_prod
+  become: true
+  roles:
+    -  { role: webserver, env: prod }
+

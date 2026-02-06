@@ -1,0 +1,12 @@
+plugin: amazon.aws.aws_ec2
+regions:
+  - us-west-2
+filters:
+  tag:Role: app
+keyed_groups:
+  - key: tags.Environment
+    prefix: env
+compose:
+  ansible_host: public_ip_address | default(private_ip_address)
+  ansible_user: ubuntu
+
